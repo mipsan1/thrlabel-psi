@@ -1,0 +1,48 @@
+{
+  "provenance": "simulation",
+  "generated_utc": "2026-07-11T11:36:01.757859+00:00",
+  "python": "3.13.7",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "scenario": {
+    "name": "fraudring_t4",
+    "data_model": "fraud_ring",
+    "threshold": 4,
+    "k": 2,
+    "description": "Fraud-ring generator, headline operating point t=4, k=2 (t >= k+2). Source of the t=4 main utility/probing table."
+  },
+  "params": {
+    "sizes": [
+      4096,
+      65536,
+      1048576
+    ],
+    "eps": [
+      0.1,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "attack_trials": 40000
+  },
+  "rq1_comm_provenance": "analytical",
+  "rq1_timing_provenance": "none",
+  "rq4_advantage_provenance": "simulation",
+  "rq4_bound_provenance": "analytical",
+  "rq1_comm_MB": [
+    1.341,
+    21.456,
+    343.304
+  ],
+  "rq4_empirical_advantage": [
+    0.0501,
+    0.1936,
+    0.3089,
+    0.4171
+  ],
+  "rq4_bound": [
+    0.05,
+    0.2449,
+    0.4621,
+    0.7616
+  ]
+}

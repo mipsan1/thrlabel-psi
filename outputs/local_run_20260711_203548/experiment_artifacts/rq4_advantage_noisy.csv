@@ -1,0 +1,6 @@
+scenario,eps,attack_accuracy,empirical_advantage,theory_bound,within_bound
+coverage_t3,0.1,0.5109,0.0218,0.05,True
+coverage_t3,0.5,0.555,0.1099,0.2449,True
+coverage_t3,1.0,0.5992,0.1984,0.4621,True
+coverage_t3,2.0,0.6564,0.3129,0.7616,True
+coverage_t3,inf,1.0,1.0,1.0,True

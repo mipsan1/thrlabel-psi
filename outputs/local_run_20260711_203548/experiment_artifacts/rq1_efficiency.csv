@@ -1,0 +1,6 @@
+scenario,set_size,per_bank_MB,total_MB,total_sym_ops
+coverage_t3,4096,0.203,1.341,67174
+coverage_t3,16384,0.811,5.364,268697
+coverage_t3,65536,3.243,21.456,1074790
+coverage_t3,262144,12.971,85.826,4299161
+coverage_t3,1048576,51.884,343.304,17196646

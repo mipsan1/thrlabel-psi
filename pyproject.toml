@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thrlabel-psi-sim"
+version = "0.2.0"
+description = "Release-layer reference simulation and analytical cost model for ThrLabel-PSI (no cryptographic implementation)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+# The entry points are plain scripts (sim.py, experiments.py, figs.py,
+# make_figures.py, sim_thrlabel.py, datagen.py) run from the repo root; they are
+# intentionally not packaged as console_scripts to keep `python <file>.py`
+# working exactly as documented.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

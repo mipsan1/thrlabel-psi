@@ -1,0 +1,30 @@
+=== MAIN (n=5,t=4,k=2) ===
+eps=0.1 P=0.45 R=0.51 F1=0.48 emp_adv=0.05 thr_only=0.050 full_dp=0.100 dcand=0.409 full+=0.509
+eps=0.5 P=0.62 R=0.55 F1=0.58 emp_adv=0.20 thr_only=0.245 full_dp=0.462 dcand=0.184 full+=0.646
+eps=1.0 P=0.80 R=0.60 F1=0.69 emp_adv=0.32 thr_only=0.462 full_dp=0.762 dcand=0.068 full+=0.829
+eps=2.0 P=0.93 R=0.65 F1=0.77 emp_adv=0.43 thr_only=0.762 full_dp=0.964 dcand=0.009 full+=0.973
+
+=== THREE DESIGNS (precision) ===
+eps=0.1 naive=0.03 noisy_gate=0.04 det=0.45
+eps=0.5 naive=0.10 noisy_gate=0.23 det=0.63
+eps=1.0 naive=0.34 noisy_gate=0.65 det=0.78
+eps=2.0 naive=0.87 noisy_gate=0.95 det=0.94
+
+=== SWEEP n (eps=1,t=min(4,n),k=2) ===
+n=3 t=3 P=0.56 R=0.51 F1=0.53
+n=5 t=4 P=0.79 R=0.59 F1=0.68
+n=7 t=4 P=0.95 R=0.80 F1=0.87
+n=10 t=4 P=0.97 R=0.95 F1=0.96
+
+=== SWEEP t (n=10,eps=1,k=2) ===
+t=3 P=0.92 R=0.98 F1=0.95 dcand=0.184
+t=4 P=0.97 R=0.95 F1=0.96 dcand=0.068
+t=5 P=0.98 R=0.90 F1=0.94 dcand=0.025
+t=7 P=0.93 R=0.74 F1=0.83 dcand=0.003
+
+=== SWEEP set size B (n=5,t=4,eps=1) ===
+B=2000 P=0.78 R=0.61 F1=0.69
+B=10000 P=0.79 R=0.61 F1=0.69
+B=50000 P=0.79 R=0.61 F1=0.69
+
+saved /Users/ckim/Downloads/thrlabel-psi-experiment-kit/outputs/local_run_20260711_203548/experiment_artifacts/sim_results.json

@@ -1,0 +1,164 @@
+{
+  "scenarios": {
+    "fraudring_t3": {
+      "union": 8941,
+      "I_t": 302,
+      "rows": [
+        {
+          "scenario": "fraudring_t3",
+          "eps": "0.1",
+          "precision": 0.6601045908515493,
+          "recall": 0.5417401241855295,
+          "f1": 0.5946884395476586,
+          "naive_P": 0.044869062672229496,
+          "noisygate_P": 0.05573841195698355,
+          "adv_closed_form": 0.04758129098202024,
+          "bound": 0.04995837495788001,
+          "delta_cand": 0.45241870901797976
+        },
+        {
+          "scenario": "fraudring_t3",
+          "eps": "0.5",
+          "precision": 0.7812677320676682,
+          "recall": 0.6668357362619062,
+          "f1": 0.7193569725857537,
+          "naive_P": 0.10997471954324914,
+          "noisygate_P": 0.24713241576953537,
+          "adv_closed_form": 0.1967346701436833,
+          "bound": 0.24491866240370913,
+          "delta_cand": 0.3032653298563167
+        },
+        {
+          "scenario": "fraudring_t3",
+          "eps": "1.0",
+          "precision": 0.8658427650185727,
+          "recall": 0.7398717931193828,
+          "f1": 0.7977362107088221,
+          "naive_P": 0.26791904562368274,
+          "noisygate_P": 0.6145600159255435,
+          "adv_closed_form": 0.31606027941427883,
+          "bound": 0.46211715726000974,
+          "delta_cand": 0.18393972058572117
+        },
+        {
+          "scenario": "fraudring_t3",
+          "eps": "2.0",
+          "precision": 0.9552688559985512,
+          "recall": 0.8083271883467992,
+          "f1": 0.8754433066947174,
+          "naive_P": 0.7265169391647074,
+          "noisygate_P": 0.9528210221434694,
+          "adv_closed_form": 0.43233235838169365,
+          "bound": 0.7615941559557649,
+          "delta_cand": 0.06766764161830635
+        },
+        {
+          "scenario": "fraudring_t3",
+          "eps": "inf",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "naive_P": 1.0,
+          "noisygate_P": 1.0,
+          "adv_closed_form": 1.0,
+          "bound": 1.0,
+          "delta_cand": 0.0
+        }
+      ]
+    },
+    "fraudring_t4": {
+      "union": 8941,
+      "I_t": 201,
+      "rows": [
+        {
+          "scenario": "fraudring_t4",
+          "eps": "0.1",
+          "precision": 0.46248064151373985,
+          "recall": 0.5201377189354275,
+          "f1": 0.48908094585944484,
+          "naive_P": 0.03147403116633567,
+          "noisygate_P": 0.0406768783704485,
+          "adv_closed_form": 0.04758129098202024,
+          "bound": 0.04995837495788001,
+          "delta_cand": 0.4093653765389909
+        },
+        {
+          "scenario": "fraudring_t4",
+          "eps": "0.5",
+          "precision": 0.6338367405693515,
+          "recall": 0.5701398558298013,
+          "f1": 0.5993970653344397,
+          "naive_P": 0.10230257662090927,
+          "noisygate_P": 0.22684661321040683,
+          "adv_closed_form": 0.1967346701436833,
+          "bound": 0.24491866240370913,
+          "delta_cand": 0.18393972058572117
+        },
+        {
+          "scenario": "fraudring_t4",
+          "eps": "1.0",
+          "precision": 0.8008617053976227,
+          "recall": 0.6151774650007651,
+          "f1": 0.6954047308437653,
+          "naive_P": 0.3297388728713962,
+          "noisygate_P": 0.643143365587598,
+          "adv_closed_form": 0.31606027941427883,
+          "bound": 0.46211715726000974,
+          "delta_cand": 0.06766764161830635
+        },
+        {
+          "scenario": "fraudring_t4",
+          "eps": "2.0",
+          "precision": 0.9373716797988811,
+          "recall": 0.6428888871599757,
+          "f1": 0.7618114151406716,
+          "naive_P": 0.8812716280202547,
+          "noisygate_P": 0.9477472373788108,
+          "adv_closed_form": 0.43233235838169365,
+          "bound": 0.7615941559557649,
+          "delta_cand": 0.00915781944436709
+        },
+        {
+          "scenario": "fraudring_t4",
+          "eps": "inf",
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "naive_P": 1.0,
+          "noisygate_P": 1.0,
+          "adv_closed_form": 1.0,
+          "bound": 1.0,
+          "delta_cand": 0.0
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "provenance": "simulation",
+    "generated_utc": "2026-07-11T11:35:55.651635+00:00",
+    "python": "3.13.7",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "scenario": {
+      "name": "fraudring_t4",
+      "data_model": "fraud_ring",
+      "threshold": 4,
+      "k": 2,
+      "description": "Fraud-ring generator, headline operating point t=4, k=2 (t >= k+2). Source of the t=4 main utility/probing table."
+    },
+    "params": {
+      "n_banks": 5,
+      "size": 2000,
+      "F": 350,
+      "p_ring": 0.72,
+      "G": 150,
+      "thresholds": [
+        3,
+        4
+      ],
+      "num_seeds": 10,
+      "base_seed": 0,
+      "model_name": "fraud_ring"
+    },
+    "note": "adv_closed_form is analytical 0.5*(1-e^-eps), not Monte-Carlo; bound is analytical DP bound."
+  }
+}

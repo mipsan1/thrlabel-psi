@@ -1,0 +1,2 @@
+make_figures.py: no --runtime-json supplied; RQ1 timing curve omitted (fail-closed). Communication MB is analytical.
+figures written to /Users/ckim/Downloads/thrlabel-psi-experiment-kit/outputs/local_run_20260711_203548/experiment_artifacts (timing provenance: none)

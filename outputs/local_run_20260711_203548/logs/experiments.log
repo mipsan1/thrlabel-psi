@@ -1,0 +1,43 @@
+=== RQ3 privacy-utility  [NO FILTER, original] ===
+{'eps': 0.1, 'precision': '0.037+/-0.001', 'recall': '0.555+/-0.023', 'f1': '0.070+/-0.003', 'mean_FP': 3645.9, 'mean_FN': 113.6}
+{'eps': 0.5, 'precision': '0.089+/-0.003', 'recall': '0.629+/-0.021', 'f1': '0.156+/-0.004', 'mean_FP': 1648.1, 'mean_FN': 94.6}
+{'eps': 1.0, 'precision': '0.225+/-0.006', 'recall': '0.712+/-0.015', 'f1': '0.342+/-0.008', 'mean_FP': 627.1, 'mean_FN': 73.5}
+{'eps': 2.0, 'precision': '0.690+/-0.015', 'recall': '0.754+/-0.014', 'f1': '0.720+/-0.012', 'mean_FP': 86.9, 'mean_FN': 62.7}
+{'eps': 'inf', 'precision': '1.000+/-0.000', 'recall': '1.000+/-0.000', 'f1': '1.000+/-0.000', 'mean_FP': 0, 'mean_FN': 0}
+
+=== RQ3 privacy-utility  [HARD FILTER c>=2, deterministic/leaky] ===
+{'eps': 0.1, 'precision': '0.802+/-0.010', 'recall': '0.544+/-0.016', 'f1': '0.648+/-0.011', 'mean_FP': 34.4, 'mean_FN': 116.3}
+{'eps': 0.5, 'precision': '0.857+/-0.013', 'recall': '0.652+/-0.022', 'f1': '0.740+/-0.014', 'mean_FP': 27.9, 'mean_FN': 88.9}
+{'eps': 1.0, 'precision': '0.935+/-0.006', 'recall': '0.716+/-0.019', 'f1': '0.811+/-0.011', 'mean_FP': 12.8, 'mean_FN': 72.4}
+{'eps': 2.0, 'precision': '0.976+/-0.007', 'recall': '0.761+/-0.020', 'f1': '0.855+/-0.013', 'mean_FP': 4.9, 'mean_FN': 61.1}
+{'eps': 'inf', 'precision': '1.000+/-0.000', 'recall': '1.000+/-0.000', 'f1': '1.000+/-0.000', 'mean_FP': 0, 'mean_FN': 0}
+
+=== RQ3 privacy-utility  [DP-SAFE noisy gate @2, budget split] ===
+{'eps': 0.1, 'precision': '0.035+/-0.002', 'recall': '0.272+/-0.021', 'f1': '0.062+/-0.004', 'mean_FP': 1924.4, 'mean_FN': 185.8}
+{'eps': 0.5, 'precision': '0.088+/-0.005', 'recall': '0.395+/-0.021', 'f1': '0.143+/-0.008', 'mean_FP': 1050.4, 'mean_FN': 154.4}
+{'eps': 1.0, 'precision': '0.202+/-0.005', 'recall': '0.501+/-0.021', 'f1': '0.287+/-0.009', 'mean_FP': 505.3, 'mean_FN': 127.5}
+{'eps': 2.0, 'precision': '0.577+/-0.012', 'recall': '0.644+/-0.020', 'f1': '0.608+/-0.013', 'mean_FP': 120.4, 'mean_FN': 90.9}
+{'eps': 'inf', 'precision': '1.000+/-0.000', 'recall': '1.000+/-0.000', 'f1': '1.000+/-0.000', 'mean_FP': 0, 'mean_FN': 0}
+
+=== RQ4 probing advantage  [single-stage] ===
+{'eps': 0.1, 'attack_accuracy': 0.5273, 'empirical_advantage': 0.0547, 'theory_bound': 0.05, 'within_bound': True}
+{'eps': 0.5, 'attack_accuracy': 0.5992, 'empirical_advantage': 0.1984, 'theory_bound': 0.2449, 'within_bound': True}
+{'eps': 1.0, 'attack_accuracy': 0.6544, 'empirical_advantage': 0.3089, 'theory_bound': 0.4621, 'within_bound': True}
+{'eps': 2.0, 'attack_accuracy': 0.7086, 'empirical_advantage': 0.4171, 'theory_bound': 0.7616, 'within_bound': True}
+{'eps': 'inf', 'attack_accuracy': 1.0, 'empirical_advantage': 1.0, 'theory_bound': 1.0, 'within_bound': True}
+
+=== RQ4 probing advantage  [DP-SAFE two-stage, total-budget bound] ===
+{'eps': 0.1, 'attack_accuracy': 0.5109, 'empirical_advantage': 0.0218, 'theory_bound': 0.05, 'within_bound': True}
+{'eps': 0.5, 'attack_accuracy': 0.555, 'empirical_advantage': 0.1099, 'theory_bound': 0.2449, 'within_bound': True}
+{'eps': 1.0, 'attack_accuracy': 0.5992, 'empirical_advantage': 0.1984, 'theory_bound': 0.4621, 'within_bound': True}
+{'eps': 2.0, 'attack_accuracy': 0.6564, 'empirical_advantage': 0.3129, 'theory_bound': 0.7616, 'within_bound': True}
+{'eps': 'inf', 'attack_accuracy': 1.0, 'empirical_advantage': 1.0, 'theory_bound': 1.0, 'within_bound': True}
+
+=== RQ1 efficiency (analytical) ===
+{'set_size': 4096, 'per_bank_MB': 0.203, 'total_MB': 1.341, 'total_sym_ops': 67174}
+{'set_size': 16384, 'per_bank_MB': 0.811, 'total_MB': 5.364, 'total_sym_ops': 268697}
+{'set_size': 65536, 'per_bank_MB': 3.243, 'total_MB': 21.456, 'total_sym_ops': 1074790}
+{'set_size': 262144, 'per_bank_MB': 12.971, 'total_MB': 85.826, 'total_sym_ops': 4299161}
+{'set_size': 1048576, 'per_bank_MB': 51.884, 'total_MB': 343.304, 'total_sym_ops': 17196646}
+
+Outputs written to /Users/ckim/Downloads/thrlabel-psi-experiment-kit/outputs/local_run_20260711_203548/experiment_artifacts

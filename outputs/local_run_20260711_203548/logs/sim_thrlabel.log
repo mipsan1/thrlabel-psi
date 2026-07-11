@@ -1,0 +1,14 @@
+=== t=3 (scenario fraudring_t3) ===  union~8941  |I_t|~302
+  eps=0.1: P=0.66 R=0.54 F1=0.59 | naive_P=0.04 noisygate_P=0.06 | adv_closed_form=0.05 bound=0.050 dcand=0.452
+  eps=0.5: P=0.78 R=0.67 F1=0.72 | naive_P=0.11 noisygate_P=0.25 | adv_closed_form=0.20 bound=0.245 dcand=0.303
+  eps=1.0: P=0.87 R=0.74 F1=0.80 | naive_P=0.27 noisygate_P=0.61 | adv_closed_form=0.32 bound=0.462 dcand=0.184
+  eps=2.0: P=0.96 R=0.81 F1=0.88 | naive_P=0.73 noisygate_P=0.95 | adv_closed_form=0.43 bound=0.762 dcand=0.068
+  eps=inf: P=1.00 R=1.00 F1=1.00 | naive_P=1.00 noisygate_P=1.00 | adv_closed_form=1.00 bound=1.000 dcand=0.000
+=== t=4 (scenario fraudring_t4) ===  union~8941  |I_t|~201
+  eps=0.1: P=0.46 R=0.52 F1=0.49 | naive_P=0.03 noisygate_P=0.04 | adv_closed_form=0.05 bound=0.050 dcand=0.409
+  eps=0.5: P=0.63 R=0.57 F1=0.60 | naive_P=0.10 noisygate_P=0.23 | adv_closed_form=0.20 bound=0.245 dcand=0.184
+  eps=1.0: P=0.80 R=0.62 F1=0.70 | naive_P=0.33 noisygate_P=0.64 | adv_closed_form=0.32 bound=0.462 dcand=0.068
+  eps=2.0: P=0.94 R=0.64 F1=0.76 | naive_P=0.88 noisygate_P=0.95 | adv_closed_form=0.43 bound=0.762 dcand=0.009
+  eps=inf: P=1.00 R=1.00 F1=1.00 | naive_P=1.00 noisygate_P=1.00 | adv_closed_form=1.00 bound=1.000 dcand=0.000
+
+saved /Users/ckim/Downloads/thrlabel-psi-experiment-kit/outputs/local_run_20260711_203548/experiment_artifacts/thrlabel_tables.json

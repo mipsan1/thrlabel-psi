@@ -1,0 +1,25 @@
+{
+  "provenance": "simulation",
+  "generated_utc": "2026-07-11T11:36:01.022103+00:00",
+  "python": "3.13.7",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "scenario": {
+    "name": "coverage_t3",
+    "data_model": "coverage",
+    "threshold": 3,
+    "k": 1,
+    "description": "Coverage-weighted planted-intersection generator (datagen.py), threshold t=3. Source of the RQ3/RQ4 CSV tables."
+  },
+  "params": {
+    "reps": 10,
+    "eps_grid": [
+      "0.1",
+      "0.5",
+      "1.0",
+      "2.0",
+      "inf"
+    ]
+  },
+  "rq1_efficiency_provenance": "analytical",
+  "note": "RQ3/RQ4 = simulation; RQ1 comm/compute = analytical CostModel; no cryptographic wall-clock timing is measured."
+}
